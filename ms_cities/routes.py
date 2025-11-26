@@ -2,6 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from .dependencies import admin_required  # o from .utils import admin_requiredfrom .database import get_db
 from .models import City
+from .database import get_db   # ¡ESTA LÍNEA FALTABA!
 from .schemas import CityCreate, CityUpdate, CityResponse
 
 router = APIRouter(
