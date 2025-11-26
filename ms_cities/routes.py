@@ -1,7 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
-from auth_service.dependencies import admin_required
-from .database import get_db
+from .dependencies import admin_required  # o from .utils import admin_requiredfrom .database import get_db
 from .models import City
 from .schemas import CityCreate, CityUpdate, CityResponse
 
