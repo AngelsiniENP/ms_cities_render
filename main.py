@@ -1,5 +1,5 @@
 # main.py (raíz)
-from ms_cities import app
+from ms_cities.app import app
 
 @app.get("/health")
 def health():
